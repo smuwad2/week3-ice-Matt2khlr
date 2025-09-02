@@ -13,34 +13,36 @@
     <div class="container mt-5">
         <form>
             <div class="row g-3">
-                <div>
-                    <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName">
+                <div class="col">
+                    <label for="fullName" class="form label">Full Name</label>
+                    <input type="text" id="fullName" class="form-control">
                 </div>
 
                 <!-- Email -->
-                <div>
+                <div class="col">
                     <label for="email">Email address</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" class="form-control">
                 </div>
 
                 <!-- Gender -->
-                <div>
-                    <label>Gender</label>
-                    <div>
-                        <input type="radio" name="gender" id="male" value="male">
+                <div class="col-4 mb-3">
+                    <label class="form-label d-block">Gender</label>
+
+                    <div class="form-check d-inline-block me-3">
+                        <input type="radio" name="gender" id="male" value="male" class="form-check-input">
                         <label for="male">Male</label>
                     </div>
-                    <div>
-                        <input type="radio" name="gender" id="female" value="female">
+                    <div class="form-check d-inline-block me-3">
+                        <input type="radio" name="gender" id="female" value="female" class="form-check-input">
                         <label for="female">Female</label>
+                    </div>
                     </div>
                 </div>
 
                 <!-- Country -->
                 <div>
-                    <label for="country">Country</label>
-                    <select id="country">
+                    <label for="country" class="form-label">Country</label>
+                    <select id="country" class="form-select">
                         <option selected>Select your country</option>
                         <option>USA</option>
                         <option>Singapore</option>
@@ -51,8 +53,8 @@
                 <!-- Subscribe -->
                 <div>
                     <div class="mt-4">
-                        <input type="checkbox" id="subscribe">
-                        <label for="subscribe">
+                        <input type="checkbox" id="subscribe" class="form-check-input">
+                        <label for="subscribe" class="form-check">
                             Subscribe to newsletter
                         </label>
                     </div>
@@ -60,8 +62,8 @@
 
                 <!-- Message -->
                 <div>
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="4"></textarea>
+                    <label for="message" class="form-input">Message</label>
+                    <textarea id="message" rows="4" class="form-control"></textarea>
                 </div>
 
                 <!-- Submit Button -->
